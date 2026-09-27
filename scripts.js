@@ -74,7 +74,7 @@ function login() {
     const password = document.getElementById("password").value.trim();
     const loginError = document.getElementById("login-error");
 
-    if (username === "admin" && password === "1234") {
+    if (username === "student" && password === "1234") {
         localStorage.setItem("quizLoggedIn", "true");
         window.location.href = "subjects.html";
     } else {
