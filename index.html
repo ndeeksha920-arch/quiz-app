@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <meta
+        name="theme-color"
+        content="#4f46e5"
+    >
+
+    <title>Simple Quiz - Login</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <main class="app">
+
+        <h1>Simple Quiz</h1>
+
+        <div id="login-container">
+
+            <div class="login-icon">
+                🔐
+            </div>
+
+            <h2>Welcome Back!</h2>
+
+            <p class="subtitle">
+                Login to start your quiz
+            </p>
+
+            <input
+                type="text"
+                id="username"
+                placeholder="Enter username"
+                autocomplete="username"
+            >
+
+            <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+                autocomplete="current-password"
+            >
+
+            <p id="login-error"></p>
+
+            <button id="login-btn">
+                Login
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="scripts.js"></script>
+
+</body>
+
+</html>
