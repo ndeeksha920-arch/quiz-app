@@ -3,65 +3,112 @@
 
 <head>
     <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <meta
-        name="viewport"
-        content="width=device-width, initial-scale=1.0"
-    >
-
-    <meta
-        name="theme-color"
-        content="#4f46e5"
-    >
-
-    <title>Simple Quiz - Login</title>
+    <title>Simple Quiz - Home</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
 
-    <main class="app">
+    <div class="home-page">
 
-        <h1>Simple Quiz</h1>
+        <header class="home-header">
 
-        <div id="login-container">
-
-            <div class="login-icon">
-                🔐
+            <div class="logo">
+                Simple Quiz
             </div>
 
-            <h2>Welcome Back!</h2>
+            <button
+                class="login-top-btn"
+                onclick="window.location.href='login.html'">
 
-            <p class="subtitle">
-                Login to start your quiz
-            </p>
-
-            <input
-                type="text"
-                id="username"
-                placeholder="Enter username"
-                autocomplete="username"
-            >
-
-            <input
-                type="password"
-                id="password"
-                placeholder="Enter password"
-                autocomplete="current-password"
-            >
-
-            <p id="login-error"></p>
-
-            <button id="login-btn">
                 Login
+
             </button>
 
-        </div>
+        </header>
 
-    </main>
 
-    <script src="scripts.js"></script>
+        <main class="hero-section">
+
+            <div class="hero-content">
+
+                <div class="home-icon">
+                    🎯
+                </div>
+
+                <h1>
+                    Welcome to <span>Simple Quiz</span>
+                </h1>
+
+                <p>
+                    Test your knowledge, improve your skills,
+                    and challenge yourself with quizzes from
+                    different subjects.
+                </p>
+
+                <button
+                    class="start-btn"
+                    onclick="window.location.href='login.html'">
+
+                    Start Quiz
+
+                </button>
+
+            </div>
+
+
+            <div class="about-section">
+
+                <h2>About Our Website</h2>
+
+                <p>
+                    Simple Quiz is an easy-to-use online quiz
+                    application designed to help you test your
+                    knowledge in different areas.
+                </p>
+
+                <div class="features">
+
+                    <div class="feature-card">
+                        <div>📚</div>
+                        <h3>Multiple Subjects</h3>
+                        <p>
+                            Choose from Computer Basics,
+                            General Knowledge, Science,
+                            Grammar and Companies.
+                        </p>
+                    </div>
+
+
+                    <div class="feature-card">
+                        <div>⏱️</div>
+                        <h3>Timed Questions</h3>
+                        <p>
+                            Each question has a 15-second
+                            timer to make the quiz exciting.
+                        </p>
+                    </div>
+
+
+                    <div class="feature-card">
+                        <div>🏆</div>
+                        <h3>Track Scores</h3>
+                        <p>
+                            Your completed quiz scores are
+                            saved for the creator dashboard.
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </div>
 
 </body>
 
